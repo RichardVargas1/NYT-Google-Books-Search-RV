@@ -12,7 +12,8 @@
     "build": "cd client && yarn build",
     "heroku-postbuild": "yarn build"
   },
-  "author": "",
+  "repository": "https://github.com/RichardVargas1/NYT-Google-Books-Search-RV",
+  "author": "Richard Vargas",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^4.1.0",
@@ -22,6 +23,7 @@
     "axios": "^0.18.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.4.3"
+    "mongoose": "^5.4.3",
+    "path": "^0.12.7"
   }
 }

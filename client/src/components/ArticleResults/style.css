@@ -1,12 +1,12 @@
-.result span {
+.alert span {
 font-size: 20px;
 }
 
-.result button {
+.alert button {
 height: 100%;
 line-height: 100%;
 }
 
-.result a {
+.alert a {
 color: #373d3f;
 }

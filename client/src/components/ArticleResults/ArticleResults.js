@@ -4,20 +4,20 @@ import "./style.css";
 const ArticleResults = ({ articleResult, saveArticleButton }) => (
     <div className="row">
         <div className="col-sm-12">
-            <div className="card">
-                <div className="card-header">
+            <div className="ArticleResult">
+                <div className="ArticleResult-header">
                     <strong>
                         <i className="fa fa-table"></i> Article Results
                     </strong>
                 </div>
 
-                <div className="card-body" id="article-section">
+                <div className="ArticleResult-body">
                     {articleResult.map((headings, index) =>
-                        <div key={index} className="result result-danger" role="result">
+                        <div key={index} className="alert alert-danger" role="alert">
                             {headings.heading.print_heading ?
-                                <a href={headings.web_url} target="_blank">{headings.heading.print_heading}</a>
+                                <a href={headings.link} target="noopener">{headings.heading.print_heading}</a>
                                 :
-                                <a href={headings.web_url} target="_blank">{headings.heading.main}</a>
+                                <a href={headings.link} target="noopener">{headings.heading.main}</a>
                             }
                             <button type="button" id={index} onClick={() => saveArticleButton(index)} className="float-right btn btn-primary">Save Article</button>
                         </div>

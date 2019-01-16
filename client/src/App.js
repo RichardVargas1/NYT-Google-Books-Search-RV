@@ -1,8 +1,12 @@
-// import React, { Component } from "react";
-// import  from 
+import React from "react";
+import NYTSearchThing from "./components/NYTSearchThing";
 
-// const App = () => (
-//   < />
-// );
+function App() {
+  return (
+    <div>
+      <NYTSearchThing />
+    </div>
+  );
+}
 
-// export default App;
+export default App;
