@@ -1,10 +1,10 @@
 import React from "react";
-import NYTSearchThing from "./components/NYTSearchThing";
+import Articles from "./pages/Articles";
 
 function App() {
   return (
     <div>
-      <NYTSearchThing />
+      <Articles />
     </div>
   );
 }
