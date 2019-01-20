@@ -1,7 +1,16 @@
 const router = require("express").Router();
-const articleRoutes = router = require("./NYTArticle");
+const ArticleRoutes = router = require("./NYTArticle");
+const GoogleRoutes = router = require("./Google");
 
-// article routes
-router.use("/books", articleRoutes);
+// Article Routes
+router.use("/articles", ArticleRoutes);
+
+// Google Routes
+router.use("/google", GoogleRoutes);
+
+// For any other location
+router.use(function (req, res) {
+    res.sendFile(path.join(__dirname, "../../client/build/index.html"));
+});
 
 module.exports = router;

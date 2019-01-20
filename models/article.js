@@ -6,9 +6,10 @@ const articleSchema = new Schema ({
     authors: { type: String, required: true },
     description: { type: String, required: true },
     image: { type: String, required: true },
-    link: { type: String, required: true }
+    link: { type: String, required: true },
+    googleID: { type: String, required: true }
 });
 
-const Article = mongoose.model("Book", articleSchema);
+const Article = mongoose.model("Article", articleSchema);
 
 module.exports = Article;
