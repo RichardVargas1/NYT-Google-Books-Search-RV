@@ -1,3 +1,3 @@
 module.exports = {
-    Artice: require("./article")
+    Book: require("./book")
 };
